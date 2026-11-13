@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'camera_screen.dart';
+import 'official_camera_preview_screen.dart';
+// 既存のCamerAwesome画面: import 'camera_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CameraScreen(), // デフォルトをカメラ画面に変更
+      // 公式cameraパッケージの16:9検証画面に差し替え
+      // 元に戻す場合: home: const CameraScreen(),
+      home: const OfficialCameraPreviewScreen(),
     );
   }
 }

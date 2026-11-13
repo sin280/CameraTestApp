@@ -37,6 +37,8 @@ dependencies:
   path_provider: ^2.1.5
   video_player: ^2.10.0
   camerawesome: ^2.5.0
+  camera: ^0.11.2
+  image: ^4.12.0
 
 dev_dependencies:
   flutter_test:
